@@ -2,9 +2,7 @@
 sidebar_position: 1
 ---
 
-# Dynatrace Health Extension
-
-## Get Started
+# Get Started
 
 ### What is Dynatrace Health Tool Extension?
 
