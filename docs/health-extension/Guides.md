@@ -2,6 +2,8 @@
 sidebar_position: 2
 ---
 
+# Guides
+
 ## Guides
 
 ### Deploy Extension
