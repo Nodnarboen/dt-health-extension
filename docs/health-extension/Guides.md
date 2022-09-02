@@ -4,8 +4,6 @@ sidebar_position: 2
 
 # Guides
 
-## Guides
-
 ### Deploy Extension
 
 1. Within Dynatrace, navigate to **Settings >> Monitored technologies >> Custom extensions** tab  
