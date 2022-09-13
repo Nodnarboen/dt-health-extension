@@ -18,8 +18,10 @@ sidebar_position: 2
 **Tenant URL** The tenant-URL you would like to fetch data from.  
 **Tenant Token** Token generated with access to read metrics, access problems, events. For details on how to generate token, refer to [help link](https://www.dynatrace.com/support/help/shortlink/token)  
 **Tenant Config Token** Token generated with permissions to ingest metrics, create dashboard.  
-**Capture consumption data per management zone** Flag to capture consumption data (Host Units, DEM, DDU) and slice it per management zone.  
-**Capture host unit consumption data per host zone** Flag to capture Host Units and slice it as per host group.
+**Capture consumption data per management zone** Flag to capture consumption data (Host Units, DEM) and slice it per management zone. Default value of the configuration is **No**.  
+**Capture host unit consumption data per host zone** Flag to capture Host Units and slice it as per host group. Default value of the configuration is **No**.  
+**Capture and report problem data** Flag to pull problem data and report data on problems in the Dynatrace Adoption Extension Dashboard/Device. Default value of the configuration is **Yes**.  
+**Capture and report feature adoption data** Flag to pull problem data and report data on Dynatrace adoption flag in the Dynatrace Adoption Extension Dashboard/Device. Default value of the configuration is **Yes**.  
 
 3. Once configured, successful extension start. It should display the Ok status.
 
@@ -61,4 +63,11 @@ Navigate to the `Data Explorer` screen for a specific metric and set expected th
 You can setup custom alerts on any of the generated metrics so as to be alerted for any abberations. This could be particularly useful for use-cases wherein you as an end-user would like a specific group to be notified once their consumption goes beyond a threshold. To setup a custom alert, navigate to **Settings > Anomaly Detection >> Custom events for alerting** and set the threshold.  
 ![custom-alert](custom_alert_mgmt_zone.png)
 
-In the above screenshot, a custom alert is setup for management zone `Cloud:AWS` to be alerted whenever the host consumption in endpoint `Non-prod` breaches 200.
+In the above screenshot, a custom alert is setup for management zone `Cloud:AWS` to be alerted whenever the host consumption in endpoint `Non-prod` breaches 200.  
+
+#### Compare consumption or adoption metrics across different endpoints  
+You can setup reports to compare adoption data or license data across different endpoints to give an overview how the different tenants are utlizing/adopting Dynatrace. To compare across tenants, navigate to **Data explorer** and split the metric(s) across different endpoints.  
+![compare-tiles](compare_config_1.png)  
+
+This can be further pinned back to the dashboard by clicking on **Pin to Dashboard**.  
+![compare-tile-2](config_tile_2.png)  
