@@ -9,7 +9,7 @@ sidebar_position: 2
 1. Within Dynatrace, navigate to **Settings >> Monitored technologies >> Custom extensions** tab  
    ![upload-extension](Upload_health_extension.png)
 
-2. Open `Dynatrace Health Check Extension` and configure it.  
+2. Open `Dynatrace Adoption Overview Extension` and configure it.  
    ![configure-extension](health_extension_endpoint_configuration.png)
 
 #### Configurables
@@ -48,6 +48,10 @@ sidebar_position: 2
 
 Whilst the extension generates the metrics and plot these onto the dashboard, there are some other features that you can leverage by doing additional configuration
 
+#### Create Customized Benefits Valuation/Dashboard Reports  
+Using the metrics available within the extension, create **customised dashboards** for showcasing Benefits Relisation. For example, using the problems data I created a dashboard as below that provides quick sneak peak into different aspects of Problems generated, RCA available, MTTR when RCA is available, etc.  
+![benefits-realisation-rpt](benefit_realisation_report.gif)  
+
 #### Dashboard Reports
 
 End-user can subscribe to get the dashboard reports weekly or monthly. More details on how to can be found in our help [documentation link](https://www.dynatrace.com/support/help/shortlink/dashboard-reports)  
@@ -57,11 +61,13 @@ End-user can subscribe to get the dashboard reports weekly or monthly. More deta
 
 Navigate to the `Data Explorer` screen for a specific metric and set expected thresholds for a specific metric. This can be powerful to get a quick view of say **MTTR**, etc.  
 ![threshold-view](dashboard_tile_threshold.png)
+![threshold-view_1](dashboard_tile_threshold_2.png)
 
 #### Setting custom alerts
 
 You can setup custom alerts on any of the generated metrics so as to be alerted for any abberations. This could be particularly useful for use-cases wherein you as an end-user would like a specific group to be notified once their consumption goes beyond a threshold. To setup a custom alert, navigate to **Settings > Anomaly Detection >> Custom events for alerting** and set the threshold.  
 ![custom-alert](custom_alert_mgmt_zone.png)
+![custom-alert](custom_alert_mgmt_zone_2.png)
 
 In the above screenshot, a custom alert is setup for management zone `Cloud:AWS` to be alerted whenever the host consumption in endpoint `Non-prod` breaches 200.  
 
